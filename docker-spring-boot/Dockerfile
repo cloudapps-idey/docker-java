@@ -14,8 +14,10 @@ RUN mvn package
 # For Java 11, try this
 #FROM adoptopenjdk/openjdk11:alpine-jre
 
+FROM registry.redhat.io/ubi8/openjdk-11
+
 # Refer to Maven build -> finalName
-ARG JAR_FILE=target/spring-boot-web.jar
+ARG JAR_FILE=data/spring-boot-web.jar
 
 # cd /opt/app
 #WORKDIR /opt/app

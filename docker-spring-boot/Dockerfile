@@ -7,7 +7,7 @@ COPY pom.xml /tmp/
 
 COPY src /tmp/src/
 
-WORKDIR /tmp/
+WORKDIR /tmp
 
 RUN mvn package
 
